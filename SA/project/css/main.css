@@ -1,0 +1,245 @@
+/*
+    Name: Main (Main stylesheet)
+    Created: 07.02.19
+    Author: Mika Haeberli
+
+    Changes:
+    --------------------------------
+    Created                 07.02.19
+    Worked on               unknown
+*/
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+
+
+/* Header properties */
+
+header {
+    margin-top: 10px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 65px;
+}
+
+.lb {
+    display: none;
+}
+
+
+
+/* Main body properties */
+
+.bod {
+    height: 100%;
+    padding: 20px;
+    background-image: linear-gradient(to top, #ff4f00, #ff6f00, #ffaf00, #ffe100);
+    font-family: 'Great Vibes', cursive;
+}
+
+.container {
+    text-align: center;
+}
+
+.wrapped-box {
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.wrapped-inner-box {
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 4px;
+    color: white;
+}
+
+.input-wrapper {
+    max-width: 40em;
+    margin: auto;
+}
+
+
+
+/* Step 1: Select image properties*/
+
+#uploader {
+    opacity: 100%;
+    height: 100%;
+    margin-top: 10px;
+    transition: all ease-in 1s;
+}
+
+.file-upload-wrapper {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    height: 50px;
+    max-width: 100%;
+    min-width: 80%;
+    padding: 8px;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-family: Calibri, serif;
+}
+
+.file-upload-wrapper input[type=file] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+
+}
+
+.upl-button {
+    float: right;
+    border: 2px solid #ffc300;
+    border-radius: 20px;
+    background: none;
+    color: #ffc300;
+}
+
+.upl-button:hover {
+    border: 2px solid #ffc300;
+    background-color: #ffc300;
+    color: white;
+
+}
+
+.file-upload-wrapper span {
+    display: block;
+    height: 100%;
+    padding: 1px;
+    border-radius: .4em;
+    color: #fff;
+    transition: background .3s;
+}
+
+#innerOut {
+    display: none;
+    height: 100%;
+    padding: 3px 5px;
+    border-radius: 5px;
+    background-color: white;
+    text-align: left;
+    font-size: 12px;
+    color: black;
+}
+
+#can {
+    margin-right: 2px;
+}
+
+#invis {
+    margin: auto;
+}
+
+#fill {
+    overflow: auto;
+    width: 50%;
+}
+
+
+/* Step 2: Identify properties */
+
+#identify {
+    height: 0;
+    opacity: 0;
+    transition: all 1s ease-in 2s;
+}
+
+.wrapped-image-box {
+    width: fit-content;
+    height: fit-content;
+    margin: 10px auto auto;
+    padding: 8px;
+    border: 2px solid white;
+    border-radius: 5px;
+    line-height: 0;
+}
+
+.id-button {
+    margin-top: 20px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #ffc300;
+    font-family: Calibri, serif;
+}
+
+#upl-image {
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+}
+
+#predictOutput {
+    display: none;
+    margin-top: 30px;
+    font-family: Calibri, serif;
+    font-size: large;
+}
+
+#predTitle {
+    margin-bottom: 20px;
+}
+
+#predict-progress {
+    opacity: 0;
+    height: 0;
+    max-width: 60%;
+    margin: auto;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+#predict-progress-value {
+    background-color: #ffc300;
+    width: 100%;
+}
+
+#predict-progress-text {
+    position: absolute;
+    text-align: center;
+    font-family: 'Calibri', serif;
+    right: 0;
+    left: 0;
+}
+
+table.table-sm > thead > tr > th{
+    border-color: white;
+}
+
+.table, td, th, tr, tbody, thead, table {
+    border-color: #ffffff !important;
+}
+
+table {
+    border-color: white !important;
+}
+
+button:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-family: 'Great Vibes', cursive;
+        font-size: 45px;
+    }
+    .lb {
+        display: block;
+    }
+}
